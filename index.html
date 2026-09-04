@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Aceptas salir conmigo?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="card" id="card.pregunta">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZhcTJ3eXoxZmtocWV3b3Z5c2lydzI0YmZldnVwbmFxdW5oZmp4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+                alt="Pregunta tierna" />
+        </div>
+        <div class="btn-container">
+            <button id="btn-si" class="btn btn-primary">Si</button>
+            <button id="btn-no" class="btn btn-danger">No</button>
+        </div>
+    </main>
+
+    <section class="card oculto" id="card-planes">
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/fe/b6/8d/feb68d8d06b81a89c7c76b7bd8a7c3bf.gif"
+                alt="Celebración" />
+        </div>
+        <h2>¡Sabía que dirías que sí!</h2>
+        <p class="subtitulo">Elige el día y la hora que mejor te queden:</p>
+
+        <form id="form-cita" class="form-cita">
+            <label for="fecha-cita">¿Qué día y hora puedes?</label>
+            <input type="datetime-local" id="fecha-cita">
+
+            <label for="tipo-plan">¿Qué te gustaría hacer?</label>
+            <select id="tipo-plan">
+                <option value="Ir por un helado o café">Ir por un helado o café</option>
+                <option value="Ir a cenar algo rico">Ir a cenar algo rico</option>
+                <option value="Ir al cine y comer palomitas">Ir al cine y comer palomitas</option>
+                <option value="Un plan sorpresa">¡Sorpréndeme!</option>
+            </select>
+
+            <button type="submit" class="btn btn-whatsapp">
+                Confirmar por WhatsApp
+            </button>
+
+        </form>
+
+        <div class="social-link">
+            <span>o si prefieres hablar por Instagram:</span>
+            <a id="btn-instagram" href="#" class="btn btn-instagram" target="_blank" rel="noopener noreferrer">Abrir Instagram </a>
+        </div>
+    </section>
+</body>
+
+</html>
